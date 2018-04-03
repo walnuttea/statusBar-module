@@ -6,7 +6,7 @@ Module to instantiate an iOS status bar in your Framer application. Currently on
 
 Instructions to place the status bar module in your prototype and get you up and running.
 
-# Import module
+### Import module
 
 Copy and paste the **statusBarModule.coffee** file from this application's modules folder into your own project's module folder. Then import the module into your application via:
 
@@ -14,11 +14,11 @@ Copy and paste the **statusBarModule.coffee** file from this application's modul
 statusBarModule = require 'statusBarModule'
 ```
 
-# Status Bar Component
+### Status Bar Component
 
 Copy and paste the `statusBar` design component from the project into your application's design mode. The module relies on this specific frame and its children.
 
-# Set the Status Bar Color
+### Set the Status Bar Color
 
 The status bar has two colors - black and white. Depending on your application, you will want to instantiate your status bar to the applicable color, and perhaps change that color with user interaction. To do so, use the following function:
 
@@ -28,7 +28,7 @@ statusBarModule.setStatusBarState('blackOrWhite')
 
 Where `blackOrWhite` is a string of the color of your choice.
 
-# Set the Placement of your Status Bar
+### Set the Placement of your Status Bar
 
 Your status bar should always be placed at the top, right hand corner of your application. To do so, use the following function:
 
@@ -38,7 +38,7 @@ statusBarModule.setStatusBarPlacement()
 
 This function automatically places your status bar in the appropriate position. Call this function at the end of your application to ensure that the status bar stays on top of other layers in your Framer app.
 
-# Set Time
+### Set Time
 
 Set the time in your status bar to the current time in your system clock with the following function:
 
